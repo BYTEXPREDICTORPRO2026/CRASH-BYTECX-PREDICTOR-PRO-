@@ -44,70 +44,174 @@ html, body {
     padding: 20px;
 }
 
-/* GLITCH TITLE */
-.glitch {
-    position: relative;
-    font-size: 36px;
-    color: red;
-    text-shadow: 0 0 10px red;
-    animation: flicker 2s infinite;
-}
-.glitch::before, .glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    width: 100%;
-    opacity: 0.8;
-}
-.glitch::before {
-    color: #0f0;
-    animation: glitchTop 1.5s infinite linear;
-}
-.glitch::after {
-    color: #f00;
-    animation: glitchBottom 1.2s infinite linear;
-}
-
-@keyframes glitchTop {
-    0% { transform: translate(2px, -2px); }
-    50% { transform: translate(-2px, 2px); }
-    100% { transform: translate(2px, -2px); }
-}
-@keyframes glitchBottom {
-    0% { transform: translate(-2px, 2px); }
-    50% { transform: translate(2px, -2px); }
-    100% { transform: translate(-2px, 2px); }
-}
-@keyframes flicker {
-    0%,100% { opacity:1; }
-    50% { opacity:0.85; }
-}
-
-/* CONTROLS */
-.controls {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-.control-btn {
-    padding: 10px 14px;
-    border: 1px solid red;
-    background: black;
-    color: red;
-    border-radius: 8px;
-    box-shadow: 0 0 10px red;
-    cursor: pointer;
-}
-.slider {
-    accent-color: red;
+h1 {
+    margin-top: 20px;
+    text-shadow: 0 0 10px red, 0 0 20px darkred;
 }
 
 /* BUTTONS */
 .btn {
     display: block;
     margin: 14px 0;
+    padding: 16px;
+    text-decoration: none;
+    color: #ff0000;
+    background: #0a0000;
+    border: 1px solid red;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255,0,0,0.5);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 30px red;
+    transform: scale(1.03);
+}
+
+/* GOLD BUTTON */
+.gold-btn {
+    display: block;
+    margin: 22px 0;
+    padding: 18px;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(45deg, #ffd700, #ffb700, #ffd700);
+    border: 2px solid #ffea00;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 0 25px #ffd700, 0 0 50px #ffae00;
+    transition: 0.3s;
+}
+
+.gold-btn:hover {
+    box-shadow: 0 0 40px #ffd700, 0 0 80px #ffae00;
+    transform: scale(1.05);
+}
+
+/* NOTICE */
+.notice-box {
+    border: 2px solid red;
+    padding: 18px;
+    margin: 30px 0;
+    border-radius: 12px;
+    background: rgba(120,0,0,0.35);
+    color: #ffd0d0;
+    text-align: left;
+    box-shadow: 0 0 25px rgba(255,0,0,0.6);
+}
+
+footer {
+    margin: 40px 0;
+    font-size: 12px;
+    color: #aa4444;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MATRIX BACKGROUND -->
+<canvas id="matrix"></canvas>
+<div class="overlay"></div>
+
+<!-- SITE CONTENT -->
+<div id="site">
+    <div class="container">
+
+        <h1>☠ BYTEX PREDICTOR PRO 2026 ☠</h1>
+
+        <a class="btn" href="https://youtube.com/@bytex_predictor_pro?si=qscaSZ-Fow1kLysY" target="_blank">
+            ▶ BYTEX YOUTUBE
+        </a>
+
+        <a class="btn" href="https://wa.me/94701427603" target="_blank">
+            ☎ BYTEX WHATSAPP HOTLINE
+        </a>
+
+        <a class="btn" href="https://t.me/SQL_PREDICTOR_HACK" target="_blank">
+            ✈ BYTEX TELEGRAM
+        </a>
+
+        <a class="btn" href="https://naween54321.github.io/SRI_LANKA_BYTEX_SIGNAL_PREDICTOR_2025/" target="_blank">
+            🚀 BYTEX AVIATOR SIGNAL 2026
+        </a>
+
+        <div class="notice-box">
+            <h3>⚠ SYSTEM NOTICE</h3>
+            <p>BYTEX PREDICTOR PRO යනු ශ්‍රී ලංකාවේ ලියාපදිංචි සමාගමකි.</p>
+            <p>
+                1) පරණ 1XBET app එක UNINSTALL කරන්න.<br>
+                2) Google හරහා නව account එකක් open කරන්න.<br>
+                3) Official app එක install කර LOGIN වෙන්න.<br>
+                4) නම + Player ID check කරන්න.<br>
+                5) Deposit BYTEX නිලධාරියා හරහා පමණි (Min Rs.10,000).
+            </p>
+
+            <a class="btn" href="https://wa.me/94701427603" target="_blank">
+                ▶ CONTACT BYTEX AGENT
+            </a>
+        </div>
+
+        <a class="gold-btn" href="https://bytexpredictorpro2026.github.io/SRI-LANKA/" target="_blank">
+            👑 BYTEX CRASH SIGNAL PRO GENERATED 👑
+        </a>
+
+        <h2>⬇ APK DOWNLOAD TERMINAL 2026</h2>
+
+        <a class="btn" href="https://www.mediafire.com/file/dfipu1s5vn5ewyt/1xBet_1xbet-prod-148%252824389%2529.apk/file" target="_blank">📥 1XBET APK 2026</a>
+        <a class="btn" href="https://www.mediafire.com/file/u43h04g6g4u3q89/MelBet_melbet-77%252821753%2529.apk/file" target="_blank">📥 MELBET APK 2026</a>
+        <a class="btn" href="https://www.mediafire.com/file/pru1bj52s04tadv/888starz_888starz-25%252819269%2529.apk/file" target="_blank">📥 888STRZ APK 2026</a>
+        <a class="btn" href="https://www.mediafire.com/file/3z43z3tc056h7wa/PariPulse_paripulse-15%252820987%2529.apk/file" target="_blank">📥 PARIPULS APK 2026</a>
+        <a class="btn" href="https://www.mediafire.com/file/5mystcwftjfb77p/XpariBet_xparibet-22%252824410%2529.apk/file" target="_blank">📥 XPARIBET APK 2026</a>
+        <a class="btn" href="https://www.mediafire.com/file/hzsdwwy9sh5zc0z/Linebet_linebet-35%252819299%2529.apk/file" target="_blank">📥 LINEBET APK 2026</a>
+
+        <footer>☠ SYSTEM BY BYTEX | 2026 ☠</footer>
+
+    </div>
+</div>
+
+<script>
+/* MATRIX EFFECT */
+const canvas = document.getElementById("matrix");
+const ctx = canvas.getContext("2d");
+
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener("resize", resize);
+
+const letters = "01BYTEXHACKSYSTEM";
+const fontSize = 14;
+let columns = Math.floor(canvas.width / fontSize);
+let drops = Array(columns).fill(1);
+
+function drawMatrix() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "red";
+    ctx.font = fontSize + "px monospace";
+
+    for (let i = 0; i < drops.length; i++) {
+        const text = letters.charAt(Math.floor(Math.random() * letters.length));
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975)
+            drops[i] = 0;
+
+        drops[i]++;
+    }
+}
+
+setInterval(drawMatrix, 35);
+</script>
+
+</body>
+</html>    margin: 14px 0;
     padding: 16px;
     text-decoration: none;
     color: #ff0000;
