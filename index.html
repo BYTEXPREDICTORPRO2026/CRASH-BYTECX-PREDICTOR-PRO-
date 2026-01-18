@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BYTEX PREDICTOR PRO 2026</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: red;
+    font-family: "Courier New", monospace;
+    min-height: 100%;
+}
+
+/* MATRIX BACKGROUND */
+#matrix {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+}
+
+/* DARK OVERLAY */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+/* CONTENT */
+#site {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* GLITCH TITLE */
+.glitch {
+    position: relative;
+    font-size: 36px;
+    color: red;
+    text-shadow: 0 0 10px red;
+    animation: flicker 2s infinite;
+}
+.glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+.glitch::before {
+    color: #0f0;
+    animation: glitchTop 1.5s infinite linear;
+}
+.glitch::after {
+    color: #f00;
+    animation: glitchBottom 1.2s infinite linear;
+}
+
+@keyframes glitchTop {
+    0% { transform: translate(2px, -2px); }
+    50% { transform: translate(-2px, 2px); }
+    100% { transform: translate(2px, -2px); }
+}
+@keyframes glitchBottom {
+    0% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    100% { transform: translate(-2px, 2px); }
+}
+@keyframes flicker {
+    0%,100% { opacity:1; }
+    50% { opacity:0.85; }
+}
+
+/* CONTROLS */
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.control-btn {
+    padding: 10px 14px;
+    border: 1px solid red;
+    background: black;
+    color: red;
+    border-radius: 8px;
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+.slider {
+    accent-color: red;
+}
+
+/* BUTTONS */
+.btn {
+    display: block;
+    margin: 14px 0;
+    padding: 16px;
+    text-decoration: none;
+    color: #ff0000;
+    background: #0a0000;
+    border: 1px solid red;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255,0,0,0.5);
+    transition: 0.3s;
+}
+.btn:hover {
+    box-shadow: 0 0 30px red;
+    transform: scale(1.03);
+}
+
+/* GOLD BUTTON */
+.gold-btn {
+    display: block;
+    margin: 22px 0;
+    padding: 18px;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(45deg, #ffd700, #ffb700, #ffd700);
+    border: 2px solid #ffea00;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 0 25px #ffd700, 0 0 50px #ffae00;
+    transition: 0.3s;
+}
+.gold-btn:hover {
+    box-shadow: 0 0 40px #ffd700, 0 0 80px #ffae00;
+    transform: scale(1.05);
+}
+
+/* NOTICE */
+.notice-box {
+    border: 2px solid red;
+    padding: 18px;
+    margin: 30px 0;
+    border-radius: 12px;
+    background: rgba(120,0,0,0.35);
+    color: #ffd0d0;
+    text-align: left;
+    box-shadow: 0 0 25px rgba(255,0,0,0.6);
+}
+
+footer {
+    margin: 40px 0;
+    font-size: 12px;
+    color: #aa4444;
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+<div class="overlay"></div>
+
+<!-- BACKGROUND SOUND -->
+<audio id="bgSound" loop>
+    <source src="https://actions.google.com/sounds/v1/ambiences/warehouse_ambience.ogg" type="audio/ogg">
+</audio>
+
+<div id="site">
+    <div class="container">
+
+        <h1 class="glitch" data-text="BYTEX PREDICTOR PRO 2026">☠ BYTEX PREDICTOR PRO 2026 ☠</h1>
+
+        <!-- CONTROLS -->
+        <div class="controls">
+            <button class="control-btn" onclick="toggleColor()">🧬 MATRIX COLOR</button>
+            <label>⚡ SPEED:
+                <input class="slider" type="range" min="10" max="100" value="35" oninput="changeSpeed(this.value)">
+            </label>
+            <button class="control-btn" onclick="toggleSound()">🔊 SOUND ON/OFF</button>
+        </div>
+
+        <a class="btn" href="https://youtube.com/@bytex_predictor_pro?si=qscaSZ-Fow1kLysY" target="_blank">▶ BYTEX YOUTUBE</a>
+        <a class="btn" href="https://wa.me/94701427603" target="_blank">☎ BYTEX WHATSAPP HOTLINE</a>
+        <a class="btn" href="https://t.me/SQL_PREDICTOR_HACK" target="_blank">✈ BYTEX TELEGRAM</a>
+        <a class="btn" href="https://naween54321.github.io/SRI_LANKA_BYTEX_SIGNAL_PREDICTOR_2025/" target="_blank">🚀 BYTEX AVIATOR SIGNAL 2026</a>
+
+        <div class="notice-box">
+            <h3>⚠ SYSTEM NOTICE</h3>
+            <p>BYTEX PREDICTOR PRO යනු ශ්‍රී ලංකාවේ ලියාපදිංචි සමාගමකි.</p>
+        </div>
+
+        <a class="gold-btn" href="https://bytexpredictorpro2026.github.io/SRI-LANKA/" target="_blank">
+            👑 BYTEX CRASH SIGNAL PRO GENERATED 👑
+        </a>
+
+        <footer>☠ SYSTEM BY BYTEX | 2026 ☠</footer>
+
+    </div>
+</div>
+
+<script>
+/* MATRIX ENGINE */
+const canvas = document.getElementById("matrix");
+const ctx = canvas.getContext("2d");
+
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener("resize", resize);
+
+const letters = "01BYTEXHACKSYSTEM";
+const fontSize = 14;
+let columns = Math.floor(canvas.width / fontSize);
+let drops = Array(columns).fill(1);
+
+let matrixColor = "red";
+let speed = 35;
+let interval;
+
+function drawMatrix() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = matrixColor;
+    ctx.font = fontSize + "px monospace";
+
+    for (let i = 0; i < drops.length; i++) {
+        const text = letters.charAt(Math.floor(Math.random() * letters.length));
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975)
+            drops[i] = 0;
+
+        drops[i]++;
+    }
+}
+
+function startMatrix() {
+    clearInterval(interval);
+    interval = setInterval(drawMatrix, speed);
+}
+startMatrix();
+
+/* CONTROLS */
+function toggleColor() {
+    matrixColor = (matrixColor === "red") ? "#00ff00" : "red";
+}
+function changeSpeed(val) {
+    speed = val;
+    startMatrix();
+}
+
+/* SOUND */
+const sound = document.getElementById("bgSound");
+let soundOn = false;
+function toggleSound() {
+    if (!soundOn) {
+        sound.play().catch(()=>{});
+        soundOn = true;
+    } else {
+        sound.pause();
+        soundOn = false;
+    }
+}
+</script>
+
+</body>
+</html>
